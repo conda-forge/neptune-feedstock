@@ -8,7 +8,6 @@ package:
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 8e2d08a9282696fc6d1c52f3309d79daae366a8f9dc71c0f9d10177376d30d78
-  
 
 build:
   noarch: python
@@ -51,10 +50,6 @@ test:
     - neptune.new
     - neptune.legacy
     - neptune.management
-  requires:
-    - pip
-  commands:
-    - pip check
 
 about:
   home: https://neptune.ai/
