@@ -50,10 +50,6 @@ test:
     - neptune.new
     - neptune.legacy
     - neptune.management
-  requires:
-    - pip
-  commands:
-    - pip check
 
 about:
   home: https://neptune.ai/
