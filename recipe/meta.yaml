@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - neptune = neptune.cli.__main__:main
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
@@ -50,6 +50,10 @@ test:
     - neptune.new
     - neptune.legacy
     - neptune.management
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://neptune.ai/
