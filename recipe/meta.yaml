@@ -1,5 +1,5 @@
 {% set name = "neptune" %}
-{% set version = "1.6.1" %}
+{% set version = "1.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 41b14f3153e92d3bc593cb751b66a755053cb305b16b1565bf0b898b4333a2a7
+  sha256: a42c5eb5603c0018e5f4fa1ea0c0e9e8afb8a09210664165990ad4be4266fae2
 
 build:
   noarch: python
-  number: 1
+  number: 0
   entry_points:
     - neptune = neptune.cli.__main__:main
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
