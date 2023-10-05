@@ -1,5 +1,5 @@
 {% set name = "neptune" %}
-{% set version = "1.7.0" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b4f6e705caa64cfcc8dd641a02694b73b9b1b54208e1e6c9c1f059ee09238c43
+  sha256: ddbe3d1eb750cbcc4c318427a0ee8a51025e1ddd153488c23726050f94008a46
 
 build:
   noarch: python
