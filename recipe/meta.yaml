@@ -46,7 +46,6 @@ requirements:
 test:
   imports:
     - neptune
-    - neptune.new
     - neptune.legacy
     - neptune.management
   requires:
